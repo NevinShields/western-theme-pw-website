@@ -323,78 +323,124 @@ button {
 /* 5. Header / Navigation */
 .main-header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--header-height);
-    background-color: rgba(248, 243, 234, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--color-accent-tan);
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: var(--max-width);
+    height: 86px;
+    background-color: var(--color-dark-charcoal);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.012) 1.5px, transparent 0);
+    background-size: 8px 8px;
+    border: 3px double var(--color-accent-tan);
+    border-radius: var(--border-radius-sm);
     z-index: 1000;
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 20px rgba(47, 33, 23, 0.03);
+    box-shadow: 0 12px 40px rgba(27, 23, 20, 0.35), inset 0 0 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
 }
 
-/* Accent sub-border underneath the tan border for a double-border heritage effect */
-.main-header::after {
+/* Hanging Leather Straps */
+.main-header::before, .main-header::after {
     content: '';
     position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-accent-copper);
-    pointer-events: none;
+    top: -24px;
+    width: 7px;
+    height: 24px;
+    background: linear-gradient(to bottom, #100D0B, var(--color-accent-copper));
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    transition: var(--transition-smooth);
 }
 
+.main-header::before {
+    left: 45px;
+}
+
+.main-header::after {
+    right: 45px;
+}
+
+/* Scrolled state: Signboard slips upward closer to screen ceiling */
 .main-header.scrolled {
+    top: 8px;
     height: 72px;
-    background-color: var(--color-bg-cream);
-    box-shadow: 0 10px 30px rgba(47, 33, 23, 0.06);
-    border-bottom-color: var(--color-accent-copper);
+    width: 94%;
+    background-color: #15110E;
+    border-color: var(--color-accent-copper);
+    box-shadow: 0 8px 30px rgba(27, 23, 20, 0.45), inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.main-header.scrolled::after {
-    display: none;
+.main-header.scrolled::before, .main-header.scrolled::after {
+    top: -8px;
+    height: 8px;
+    background: var(--color-accent-copper);
 }
 
 .header-container {
-    width: 92%;
-    max-width: var(--max-width);
+    width: 100%;
+    padding: 0 24px;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+/* Brass Screws / Rivets holding the signboard ends */
+.header-container::before, .header-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 11px;
+    background: radial-gradient(circle at 35% 35%, #FFF2CC 0%, #D4B08C 45%, #B66A2C 80%, #542B0D 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+.header-container::before {
+    left: 14px;
+}
+
+.header-container::after {
+    right: 14px;
 }
 
 .logo-group {
     display: flex;
     align-items: center;
     gap: 14px;
+    padding-left: 12px; /* Shift to clear rivet area */
 }
 
 .brand-brand {
     font-family: var(--font-heading);
     font-size: 26px;
-    color: var(--color-bg-cream);
-    background-color: var(--color-text-brown);
+    color: var(--color-text-brown);
+    background-color: var(--color-accent-copper);
     width: 44px;
     height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-radius-sm);
-    border: 2px solid var(--color-accent-copper);
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6), 0 4px 10px rgba(47, 33, 23, 0.15);
+    border: 2px solid var(--color-bg-cream);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.3);
     transform: rotate(-3deg);
     transition: var(--transition-smooth);
 }
 
 .logo-group:hover .brand-brand {
     transform: rotate(2deg) scale(1.05);
-    background-color: var(--color-accent-copper);
-    border-color: var(--color-bg-cream);
+    background-color: var(--color-bg-cream);
+    color: var(--color-accent-copper);
+    border-color: var(--color-accent-copper);
 }
 
 .logo-text {
@@ -406,7 +452,7 @@ button {
     font-family: var(--font-heading);
     font-size: 19px;
     letter-spacing: 2px;
-    color: var(--color-text-brown);
+    color: var(--color-bg-cream);
     line-height: 1;
     font-weight: 700;
 }
@@ -417,7 +463,7 @@ button {
     font-size: 8px;
     font-weight: 800;
     letter-spacing: 4px;
-    color: var(--color-accent-copper);
+    color: var(--color-accent-tan);
     margin-top: 3px;
     text-transform: uppercase;
 }
@@ -435,7 +481,7 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--color-text-brown);
+    color: rgba(248, 243, 234, 0.85);
     position: relative;
     padding: 8px 0;
     transition: var(--transition-fast);
@@ -449,7 +495,7 @@ button {
     left: 50%;
     transform: translate(-50%, -4px);
     font-size: 8px;
-    color: var(--color-accent-copper);
+    color: var(--color-accent-tan);
     opacity: 0;
     transition: var(--transition-smooth);
 }
@@ -462,12 +508,12 @@ button {
     transform: translateX(-50%);
     width: 0;
     height: 1.5px;
-    background-color: var(--color-accent-copper);
+    background-color: var(--color-accent-tan);
     transition: var(--transition-smooth);
 }
 
 .nav-link:hover {
-    color: var(--color-accent-copper);
+    color: var(--color-accent-tan);
 }
 
 .nav-link:hover::before {
@@ -483,9 +529,10 @@ button {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-right: 12px; /* Clear rivet space */
 }
 
-/* Tactile Pill phone link styling */
+/* Tactile Pill phone link styling for Dark Signboard */
 .phone-link {
     display: flex;
     align-items: center;
@@ -494,25 +541,25 @@ button {
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--color-text-brown);
-    border: 1px solid var(--color-border-sand);
+    color: rgba(248, 243, 234, 0.9);
+    border: 1px solid rgba(228, 215, 200, 0.15);
     padding: 9px 18px;
     border-radius: 50px;
-    background-color: rgba(47, 33, 23, 0.02);
-    box-shadow: inset 0 1px 3px rgba(47, 33, 23, 0.03);
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: var(--transition-fast);
 }
 
 .phone-link svg {
-    color: var(--color-accent-copper);
+    color: var(--color-accent-tan);
     transition: var(--transition-fast);
 }
 
 .phone-link:hover {
-    color: var(--color-accent-copper);
-    border-color: var(--color-accent-copper);
-    background-color: var(--color-light-sand);
-    box-shadow: 0 4px 10px rgba(182, 106, 44, 0.05);
+    color: var(--color-accent-tan);
+    border-color: var(--color-accent-tan);
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 10px rgba(212, 176, 140, 0.05);
 }
 
 .phone-link:hover svg {
@@ -532,7 +579,7 @@ button {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--color-text-brown);
+    background-color: var(--color-bg-cream);
     transition: var(--transition-fast);
 }
 
@@ -2672,7 +2719,27 @@ button {
     .section-padding { padding: 60px 0; }
     
     .main-header {
-        background-color: var(--color-bg-cream);
+        background-color: var(--color-dark-charcoal);
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94%;
+        height: 70px;
+        border: 2px solid var(--color-accent-copper);
+        border-radius: var(--border-radius-sm);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.4), inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .main-header::before, .main-header::after {
+        display: none; /* hide straps on mobile to save vertical space */
+    }
+    
+    .header-container::before, .header-container::after {
+        display: none; /* hide rivets on mobile */
+    }
+    
+    .logo-group {
+        padding-left: 0;
     }
     
     .nav-menu, .header-actions { display: none; }
