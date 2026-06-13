@@ -293,7 +293,9 @@ document.addEventListener('DOMContentLoaded', () => {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
             
             dots.forEach(d => d.classList.remove('active'));
-            dots[currentIndex].classList.add('active');
+            if (dots && dots[currentIndex]) {
+                dots[currentIndex].classList.add('active');
+            }
         };
 
         // Arrow Triggers

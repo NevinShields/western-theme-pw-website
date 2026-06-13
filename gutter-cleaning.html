@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saddleback Wash Co. | Safe Gutter Cleaning, Flush & Brightening</title>
+    <meta name="description" content="Keep your property shedding water safely. Professional gutter cleaning, downspout flushing, and gutter face brightening in Central PA. Fully insured, family-owned.">
+    
+    <!-- Google Fonts: Young Serif (Western style), Playfair Display (Luxury serif), Plus Jakarta Sans (Modern body), Mrs Saint Delafield (Signature script) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Young+Serif&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-brand">
+            <svg class="loader-logo" viewBox="0 0 100 100" width="80" height="80">
+                <path d="M20,50 C20,30 35,20 50,20 C65,20 80,30 80,50 C80,70 65,80 50,80 C35,80 20,70 20,50 Z" fill="none" stroke="#B66A2C" stroke-width="3"/>
+                <path d="M35,40 L65,40 M35,50 L65,50 M35,60 L65,60" stroke="#D4B08C" stroke-width="2"/>
+                <path d="M50,20 L50,80" stroke="#B66A2C" stroke-width="2"/>
+                <text x="50" y="55" font-family="'Young Serif', serif" font-size="28" fill="#F8F3EA" text-anchor="middle" alignment-baseline="middle">S</text>
+            </svg>
+            <h2 class="loader-title">SADDLEBACK</h2>
+            <p class="loader-subtitle">GUTTER RESTORATION</p>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation Header (Hanging Signboard) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-group">
+                <span class="brand-brand">S</span>
+                <div class="logo-text">
+                    <span class="logo-title">SADDLEBACK</span>
+                    <span class="logo-tag">WASH CO.</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Gutter Offerings</a>
+                <a href="#why-choose-us" class="nav-link">Our Approach</a>
+                <a href="#gallery" class="nav-link">Before & After</a>
+                <a href="#process" class="nav-link">How It Works</a>
+                <a href="#map" class="nav-link">Service Areas</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:7175550190" class="phone-link">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>(717) 555-0190</span>
+                </a>
+                <a href="#contact" class="btn btn-accent btn-sm">Get Free Quote</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="#services" class="mobile-link">Gutter Offerings</a>
+            <a href="#why-choose-us" class="mobile-link">Our Approach</a>
+            <a href="#gallery" class="mobile-link">Before & After</a>
+            <a href="#process" class="mobile-link">How It Works</a>
+            <a href="#map" class="mobile-link">Service Areas</a>
+            <a href="#about" class="mobile-link">Our Story</a>
+            <a href="#faq" class="mobile-link">FAQs</a>
+            <a href="#contact" class="mobile-link btn btn-accent">Get Instant Quote</a>
+            <a href="tel:7175550190" class="mobile-phone-link">(717) 555-0190</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section">
+        <!-- Floating canvas particles -->
+        <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+        
+        <!-- Video Background Container -->
+        <div class="hero-video-container">
+            <div class="hero-video-overlay"></div>
+            <img src="assets/service_gutter.jpg" alt="Clean gutters on a rustic home siding background" class="hero-fallback-img">
+        </div>
+
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <span class="hero-badge">Est. 2014 &bull; Professional Gutter Protection</span>
+                <h1 class="hero-title fade-up">Keep Your Property<br><span class="highlight-text">Shedding Water Safely</span></h1>
+                <p class="hero-subtitle fade-up delay-1">Professional gutter cleaning, downspout jetting, and eave detailing that protects your foundations, siding, and landscaping from overflow water damage.</p>
+                
+                <div class="hero-buttons fade-up delay-2">
+                    <a href="#contact" class="btn btn-accent btn-lg ripple">Get Instant Quote</a>
+                    <a href="#gallery" class="btn btn-outline btn-lg">View Our Work</a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-badges fade-up delay-3">
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Foundation Shield</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" fill="currentColor"/>
+                        </svg>
+                        <span>No-Clog Guarantee</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="currentColor"/>
+                        </svg>
+                        <span>Family Owned</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,2C11.95,2 11.9,2 11.85,2.03L5.85,3.53C5.35,3.66 5,4.11 5,4.63V11C5,15.82 8.05,20.25 12,21.5C15.95,20.25 19,15.82 19,11V4.63C19,4.11 18.65,3.66 18.15,3.53L12.15,2.03C12.1,2 12.05,2 12,2M12,4L17,5.25V11C17,14.67 14.85,18.06 12,19.38C9.15,18.06 7,14.67 7,11V5.25L12,4M10.9,13.8L8.4,11.3L7,12.7L10.9,16.6L17,10.5L15.6,9.1L10.9,13.8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Downspout Flushed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-bar-bg-overlay"></div>
+        <div class="trust-bar-container">
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M30,35 L70,35 M50,35 L50,65 M35,65 L65,65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">1,200+</h3>
+                    <p class="stat-desc">Gutters Cleared</p>
+                </div>
+            </div>
+            
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M30,30 L50,70 L70,30" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40,50 L60,50" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">5.0 Star</h3>
+                    <p class="stat-desc">Safety Audits</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,40 H65 M50,40 V65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M40,65 H60" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">Zero Risk</h3>
+                    <p class="stat-desc">Ground-Based Gear</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,35 L65,65 M65,35 L35,65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-desc">Clog Guarantee</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,45 C35,35 45,30 50,30 C55,30 65,35 65,45 C65,58 50,70 50,70 C50,70 35,58 35,45 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+                        <circle cx="50" cy="45" r="5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">Same Week</h3>
+                    <p class="stat-desc">Scheduling Routes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Services Section (Sub-Offerings) -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">System Protection</span>
+                <h2 class="section-title">Gutter Clearing Specialities</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">We handle every aspect of gutter health, from internal debris removal to exterior cosmetic detailing and structural downspout flushes.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_gutter.jpg" alt="Inside Debris Clear Icon">
+                    </div>
+                    <h3 class="card-title">Inside Debris Clear</h3>
+                    <p class="card-desc">Thorough manual extraction of leaves, twigs, maple seeds, and heavy shingle grit layers from the gutter channels.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Book Clear &rarr;</a></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_concrete.jpg" alt="Downspout Jetting Icon">
+                    </div>
+                    <h3 class="card-title">Downspout Jetting</h3>
+                    <p class="card-desc">High-volume water flushing through elbow joints and vertical lines to ensure no hidden blockages remain.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Jet Downspouts &rarr;</a></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_house.jpg" alt="Gutter Face Brightening Icon">
+                    </div>
+                    <h3 class="card-title">Gutter Face Brightening</h3>
+                    <p class="card-desc">Specialized soft wash application targeting black runoff streaks (tiger striping) to restore the bright white look.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Brighten Gutters &rarr;</a></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_deck.jpg" alt="Minor Seal Repairs Icon">
+                    </div>
+                    <h3 class="card-title">Minor Seal Repairs</h3>
+                    <p class="card-desc">Patching leaks in endcaps, corner joints, and seams using premium, waterproof heavy-duty gutter silicone sealants.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Seal Leaks &rarr;</a></div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_roof.jpg" alt="Guard Maintenance Icon">
+                    </div>
+                    <h3 class="card-title">Guard Maintenance</h3>
+                    <p class="card-desc">Inspecting, cleaning under, and re-securing existing metal mesh guards to keep system efficiency high.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Inspect Guards &rarr;</a></div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_commercial.jpg" alt="Underground Drain Flush Icon">
+                    </div>
+                    <h3 class="card-title">Underground Drain Flush</h3>
+                    <p class="card-desc">Flushing storm water extensions from the base of downspouts out to public drains, ensuring foundation safety.</p>
+                    <div class="card-action"><a href="#contact" class="service-link-btn">Flush Drains &rarr;</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Before & After Gallery -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="gallery-bg-texture"></div>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Gutter Proof</span>
+                <h2 class="section-title">See The Difference</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">Slide to inspect how our clearing and jetting services restore absolute drainage capacity.</p>
+            </div>
+
+            <!-- Before & After Tab Controls -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-target="slider-gutter">System Flow</button>
+            </div>
+
+            <!-- Before & After Sliders Wrapper -->
+            <div class="sliders-container">
+                <!-- Gutter Slider -->
+                <div class="slider-wrapper active" id="slider-gutter">
+                    <div class="before-after-slider">
+                        <div class="img-container before-img">
+                            <div class="fallback-placeholder before-placeholder before-gutter-placeholder">
+                                <h3>Clogged Gutter &amp; Dirt</h3>
+                            </div>
+                            <div class="slider-label label-before">Clogged Channels</div>
+                        </div>
+                        <div class="img-container after-img">
+                            <div class="fallback-placeholder after-placeholder after-gutter-placeholder">
+                                <h3>Clean Free Flowing Gutter</h3>
+                            </div>
+                            <div class="slider-label label-after">Free Flowing</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+                                </svg>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Why Choose Us -->
+    <section id="why-choose-us" class="why-choose-us section-padding">
+        <div class="container">
+            <div class="why-grid">
+                <!-- Left: Action image -->
+                <div class="why-image-wrapper">
+                    <div class="why-image-border"></div>
+                    <img src="assets/founder.jpg" alt="Founder clearing gutter debris" class="why-image">
+                    <div class="why-badge">
+                        <span class="badge-num">100%</span>
+                        <span class="badge-text">Clog Free</span>
+                    </div>
+                </div>
+
+                <!-- Right: Benefits column -->
+                <div class="why-content">
+                    <span class="sub-title">Built On Safety</span>
+                    <h2 class="section-title text-left">Built On Hard Work &amp; Honest Service</h2>
+                    <p class="why-lead">We operate with professional ladder safety systems and ground-based tools to protect your gutters and our team.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Foundation Protection</h4>
+                                <p>Overflowing gutters dump thousands of gallons of rainwater next to your walls, causing basement leaks and mold. We keep it moving.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2L2 22h20L12 2zm0 3.99L19.53 19H4.47L12 5.99zM13 16h-2v2h2v-2zm0-6h-2v4h2v-4z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Downspout Flow Guarantee</h4>
+                                <p>We don't just scoop gutters; we flush every vertical downspout run and guarantee they stay clear through the next season.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Reviews Section -->
+    <section class="reviews-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Gutter Reviews</span>
+                <h2 class="section-title">Homeowner Testimonials</h2>
+                <div class="title-divider"></div>
+                
+                <!-- Average Rating Display -->
+                <div class="average-rating-box">
+                    <div class="rating-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <span class="rating-number">4.9 / 5.0 Rating</span>
+                    <span class="rating-count">Verified Gutter Clearance Audits</span>
+                </div>
+            </div>
+
+            <!-- Postcard Carousel -->
+            <div class="carousel-outer">
+                <button class="carousel-control prev" aria-label="Previous review">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="carousel-window">
+                    <div class="carousel-track">
+                        <!-- Review Postcard 1 -->
+                        <div class="review-postcard">
+                            <div class="postcard-front">
+                                <div class="postcard-stamp">
+                                    <div class="stamp-serrated"></div>
+                                    <span class="stamp-price">5&cent;</span>
+                                    <span class="stamp-text">EST. 2014</span>
+                                </div>
+                                <div class="postcard-content">
+                                    <div class="postcard-left-side">
+                                        <div class="postcard-rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                        <p class="postcard-text">"Our gutters were packed with maple seeds and overflowed every time it rained, pooling water by the foundation. Saddleback cleared them completely and jetted the downspouts. Safe, professional, and thorough!"</p>
+                                    </div>
+                                    <div class="postcard-divider-line"></div>
+                                    <div class="postcard-right-side">
+                                        <div class="postcard-recipient">
+                                            <p class="postcard-label">TO:</p>
+                                            <p class="postcard-name">Thomas K.</p>
+                                            <p class="postcard-location">Harrisburg, PA</p>
+                                        </div>
+                                        <div class="postcard-signature">
+                                            <span>Thomas K.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control next" aria-label="Next review">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Process Section (Trail Map Inspired) -->
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Restoration Trail</span>
+                <h2 class="section-title text-light">How We Clear Gutters</h2>
+                <div class="title-divider"></div>
+                <p class="section-description text-light">Follow the trail. Our safe, zero-damage clearance process protects your roofing edge and landscaping.</p>
+            </div>
+
+            <!-- Trail Map Visual -->
+            <div class="trail-container">
+                <!-- SVG Animated Path -->
+                <svg class="trail-svg" viewBox="0 0 800 500" preserveAspectRatio="none">
+                    <path class="trail-path-bg" d="M 100,100 C 300,100 200,250 400,250 C 600,250 500,400 700,400" fill="none" stroke="#2F2117" stroke-width="4" stroke-dasharray="10 10"/>
+                    <path id="active-trail-path" class="trail-path-active" d="M 100,100 C 300,100 200,250 400,250 C 600,250 500,400 700,400" fill="none" stroke="#B66A2C" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+
+                <div class="trail-step step-1" style="left: 12%; top: 20%;">
+                    <div class="step-marker"><span class="step-num">1</span><div class="marker-pulse"></div></div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Debris Extraction</h4>
+                        <p class="step-text">We manually scoop and clear all leaves, moss, and pine needles from gutter channels.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-2" style="left: 38%; top: 50%;">
+                    <div class="step-marker"><span class="step-num">2</span><div class="marker-pulse"></div></div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Downspout Flush</h4>
+                        <p class="step-text">High-volume water flush through all vertical runs to verify no hidden clogs remain.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-3" style="left: 58%; top: 32%;">
+                    <div class="step-marker"><span class="step-num">3</span><div class="marker-pulse"></div></div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Exterior Brightening</h4>
+                        <p class="step-text">Soft wash cleaning solution applied to remove black tiger stripes and oxidation.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-4" style="left: 88%; top: 80%;">
+                    <div class="step-marker"><span class="step-num">4</span><div class="marker-pulse"></div></div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Joint Inspection</h4>
+                        <p class="step-text">We check seams, slope angles, and brackets to ensure your gutters drain perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Video Section -->
+    <section class="video-section section-padding">
+        <div class="video-section-overlay"></div>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Action Footage</span>
+                <h2 class="section-title text-light">Watch Gutter Clearing Live</h2>
+                <div class="title-divider"></div>
+                <p class="section-description text-light">See how our high-volume flush tests gutter channels and downspout runs under heavy simulated rainfall.</p>
+            </div>
+
+            <div class="video-frame-container">
+                <div class="video-frame-top-decor"></div>
+                <div class="video-frame-inner">
+                    <div class="video-mock-overlay">
+                        <div class="video-mock-bg"></div>
+                        <div class="video-play-btn-wrapper">
+                            <button id="video-play-button" class="video-play-btn" aria-label="Play video">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <video id="cinematic-video" class="cinematic-player" preload="metadata" loop muted playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-power-washing-a-brick-wall-42173-large.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-frame-bottom-decor"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Service Area Map -->
+    <section id="map" class="map-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Our Territory</span>
+                <h2 class="section-title">Serving Central Pennsylvania</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">We route our gutter maintenance teams daily across Dauphin and Cumberland counties.</p>
+            </div>
+
+            <div class="map-layout">
+                <div class="map-visual-container">
+                    <div class="map-inner-border"></div>
+                    <svg class="custom-pa-map" viewBox="0 0 600 450">
+                        <path d="M 50,50 Q 150,80 300,50 T 550,60" fill="none" stroke="#E4D7C8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M 220,0 Q 240,150 210,250 T 260,450" fill="none" stroke="#D4B08C" stroke-width="8" opacity="0.3"/>
+                        <circle cx="300" cy="225" r="180" fill="none" stroke="#B66A2C" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+                        <!-- Harrisburg -->
+                        <g class="map-pin active" data-city="harrisburg" transform="translate(230, 210)">
+                            <circle cx="0" cy="0" r="16" fill="rgba(182, 106, 44, 0.15)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="6" fill="#B66A2C"/>
+                            <text x="12" y="4" font-family="'Young Serif', serif" font-size="12" fill="#2F2117">Harrisburg</text>
+                        </g>
+                    </svg>
+                    <div id="map-info-popup" class="map-info-box">
+                        <h4 id="popup-title">Harrisburg Office</h4>
+                        <p id="popup-desc">Gutter cleaning dispatched daily across all central PA counties.</p>
+                        <span class="popup-stat">Avg. Dispatch: <strong id="popup-dispatch">Same Week</strong></span>
+                    </div>
+                </div>
+
+                <div class="map-directory">
+                    <span class="sub-title">Where We Work</span>
+                    <h3 class="directory-title">Gutter Wash Dispatch Locations</h3>
+                    <p class="directory-desc">Select a town to view typical gutter maintenance scheduling and routing calendars.</p>
+                    <div class="cities-list-group">
+                        <button class="city-selector-btn active" data-city="harrisburg"><span>Harrisburg</span><span class="badge badge-primary">Daily Dispatch</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Wash details</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">Common questions regarding safe gutter clearing, clog prevention, and exterior brightening.</p>
+            </div>
+
+            <div class="faq-accordion-group">
+                <!-- Item 1 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">How often should I have my gutters cleaned?</h4>
+                        <div class="accordion-icon-wrapper"><span class="accordion-icon"></span></div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>We recommend cleaning gutters at least twice a year: once in late spring to clear maple seeds and pollen, and once in late fall after all leaves have dropped to prepare for winter ice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">Do you clean gutters with gutter guards installed?</h4>
+                        <div class="accordion-icon-wrapper"><span class="accordion-icon"></span></div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Yes. We can remove or lift guards to clear out fine silt and organic debris that builds up underneath, clean the guards themselves, and re-secure them.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">What is gutter brightening or tiger striping removal?</h4>
+                        <div class="accordion-icon-wrapper"><span class="accordion-icon"></span></div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Black streaks on gutter exteriors are caused by electrostatic bonding of acid rain residue and roofing runoff. Standard washing won't remove them. We use specialized cleaning agents to break this bond and restore the white color.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="sub-title">Our Craft</span>
+                    <h2 class="section-title text-left">A Local Company You Can Count On</h2>
+                    <p class="about-lead">We believe gutters are the most critical line of defense for your property's foundation.</p>
+                    <div class="story-text">
+                        <p>Saddleback Wash Co. was started to provide honest, meticulous exterior care. We don't cut corners. Every gutter cleaning is backed by a downspout flow inspection and our signature customer service.</p>
+                    </div>
+                    <div class="founder-signature-box">
+                        <p class="signature-greeting">Sincerely,</p>
+                        <span class="signature-font">Nevin Shields</span>
+                        <div class="founder-title"><strong>Nevin Shields</strong><span>Founder &amp; Crew Manager</span></div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-border-frame"></div>
+                    <div class="visual-image-container">
+                        <img src="assets/founder.jpg" alt="Saddleback Founder Nevin Shields" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 12: CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-banner-overlay"></div>
+        <div class="container text-center">
+            <h2 class="cta-headline">Ready To Protect Your Property's<br>Foundation?</h2>
+            <p class="cta-subheadline">Get a free, detailed gutter clearing estimate in under 3 hours.</p>
+            <a href="#contact" class="btn btn-accent btn-lg ripple">Get Instant Quote</a>
+        </div>
+    </section>
+
+    <!-- Section 13: Contact Form -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-block">
+                    <span class="sub-title">Contact Us</span>
+                    <h2 class="section-title text-left text-light">Get Your Free Estimate</h2>
+                    <p class="contact-lead-text">Fill out our quote form, and our estimating team will send a custom line-item quote via text and email within 3 hours.</p>
+                    <div class="info-details-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="info-text"><span>Call or Text:</span><a href="tel:7175550190">(717) 555-0190</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-block wood-plaque">
+                    <form id="quote-request-form" class="quote-form" method="POST">
+                        <div class="form-row-2">
+                            <div class="form-group"><label for="form-name">Full Name <span class="required">*</span></label><input type="text" id="form-name" name="name" placeholder="John Miller" required></div>
+                            <div class="form-group"><label for="form-phone">Phone <span class="required">*</span></label><input type="tel" id="form-phone" name="phone" placeholder="(717) 555-0100" required></div>
+                        </div>
+                        <div class="form-row-2">
+                            <div class="form-group"><label for="form-email">Email <span class="required">*</span></label><input type="email" id="form-email" name="email" placeholder="john@example.com" required></div>
+                            <div class="form-group"><label for="form-address">Address <span class="required">*</span></label><input type="text" id="form-address" name="address" placeholder="123 Country Club Rd, Camp Hill, PA" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-service">Required Service <span class="required">*</span></label>
+                            <select id="form-service" name="service" required>
+                                <option value="house">House Soft Wash</option>
+                                <option value="roof">Shingle/Slate Roof Restoration</option>
+                                <option value="concrete">Concrete / Patio Restoration</option>
+                                <option value="deck">Deck &amp; Fence Care</option>
+                                <option value="gutter" selected>Gutter Clearing &amp; Brightening</option>
+                                <option value="window">Window Cleaning</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label for="form-message">Describe Your Project</label><textarea id="form-message" name="message" rows="4" placeholder="E.g., clogged gutters clearance and brightening."></textarea></div>
+                        
+                        <div class="form-group">
+                            <label>Optional: Upload Property Photos</label>
+                            <div id="photo-dropzone" class="dropzone-area">
+                                <input type="file" id="form-photos" name="photos" accept="image/*" multiple class="dropzone-input">
+                                <div class="dropzone-message">
+                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                    <p class="dropzone-main-text">Drag photos or <span>browse</span></p>
+                                </div>
+                                <div id="dropzone-preview" class="dropzone-preview-grid"></div>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submit-quote-btn" class="btn btn-accent btn-full ripple"><span>Get Gutter Quote</span></button>
+                        <div id="form-success-message" class="form-status success-box hidden">
+                            <div class="status-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+                            <div class="status-content">
+                                <h4>Request Submitted!</h4>
+                                <p>We've received your gutter cleaning quote request. Our estimating team will text you shortly.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 14: Footer -->
+    <footer class="main-footer">
+        <div class="footer-bg-overlay"></div>
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="logo-group">
+                        <span class="brand-brand">S</span>
+                        <div class="logo-text"><span class="logo-title text-light">SADDLEBACK</span><span class="logo-tag text-light">WASH CO.</span></div>
+                    </a>
+                    <p class="footer-desc">Premium low-pressure soft washing and slate roof restoration specialists in Central PA.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Services Offered</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="house-washing.html">House Siding Soft Washing</a></li>
+                        <li><a href="roof-cleaning.html">Shingle &amp; Slate Roof Clean</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Flush &amp; Brighten</a></li>
+                        <li><a href="window-cleaning.html">Window Cleaning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Territories Covered</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#map">Harrisburg, PA</a></li>
+                        <li><a href="#map">Mechanicsburg, PA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Contact Saddleback</h4>
+                    <ul class="footer-contact-details">
+                        <li><span class="label">Dispatch Center:</span><a href="tel:7175550190" class="tel-link">(717) 555-0190</a></li>
+                        <li><span class="label">Corporate HQ:</span><address>400 Ironwood Dr, Harrisburg, PA 17110</address></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"><div class="divider-line"></div><div class="divider-star">&#9733;</div><div class="divider-line"></div></div>
+
+            <div class="footer-bottom-row">
+                <p class="copyright-text">&copy; 2026 Saddleback Wash Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
