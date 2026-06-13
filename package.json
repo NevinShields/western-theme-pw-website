@@ -1,0 +1,13 @@
+{
+  "name": "western-theme-pw-website",
+  "version": "1.0.0",
+  "description": "Premium Western-Themed Pressure Washing Website for Saddleback Wash Co.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saddleback Wash Co. | Premium Exterior Restoration & Soft Washing</title>
+    <meta name="description" content="Restore your property's original character. Premium pressure washing and safe soft washing services for high-end homes and estates in Central Pennsylvania. Fully insured, 5-star rated, family-owned.">
+    
+    <!-- Google Fonts: Young Serif (Western style), Playfair Display (Luxury serif), Plus Jakarta Sans (Modern body), Mrs Saint Delafield (Signature script) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Young+Serif&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-brand">
+            <svg class="loader-logo" viewBox="0 0 100 100" width="80" height="80">
+                <path d="M20,50 C20,30 35,20 50,20 C65,20 80,30 80,50 C80,70 65,80 50,80 C35,80 20,70 20,50 Z" fill="none" stroke="#B66A2C" stroke-width="3"/>
+                <path d="M35,40 L65,40 M35,50 L65,50 M35,60 L65,60" stroke="#D4B08C" stroke-width="2"/>
+                <path d="M50,20 L50,80" stroke="#B66A2C" stroke-width="2"/>
+                <text x="50" y="55" font-family="'Young Serif', serif" font-size="28" fill="#F8F3EA" text-anchor="middle" alignment-baseline="middle">S</text>
+            </svg>
+            <h2 class="loader-title">SADDLEBACK</h2>
+            <p class="loader-subtitle">EXTERIOR RESTORATION</p>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-group">
+                <span class="brand-brand">S</span>
+                <div class="logo-text">
+                    <span class="logo-title">SADDLEBACK</span>
+                    <span class="logo-tag">WASH CO.</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Our Services</a>
+                <a href="#why-choose-us" class="nav-link">Our Approach</a>
+                <a href="#gallery" class="nav-link">Before & After</a>
+                <a href="#process" class="nav-link">How It Works</a>
+                <a href="#map" class="nav-link">Service Areas</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:7175550190" class="phone-link">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>(717) 555-0190</span>
+                </a>
+                <a href="#contact" class="btn btn-accent btn-sm">Get Free Quote</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="#services" class="mobile-link">Our Services</a>
+            <a href="#why-choose-us" class="mobile-link">Our Approach</a>
+            <a href="#gallery" class="mobile-link">Before & After</a>
+            <a href="#process" class="mobile-link">How It Works</a>
+            <a href="#map" class="mobile-link">Service Areas</a>
+            <a href="#about" class="mobile-link">Our Story</a>
+            <a href="#faq" class="mobile-link">FAQs</a>
+            <a href="#contact" class="mobile-link btn btn-accent">Get Instant Quote</a>
+            <a href="tel:7175550190" class="mobile-phone-link">(717) 555-0190</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section">
+        <!-- Floating canvas particles -->
+        <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+        
+        <!-- Video Background Container -->
+        <div class="hero-video-container">
+            <div class="hero-video-overlay"></div>
+            <!-- Standard fallback image, dynamic loop representation -->
+            <img src="assets/hero_bg.jpg" alt="Luxury Estate Farmhouse Sunset" class="hero-fallback-img">
+        </div>
+
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <span class="hero-badge">Est. 2014 &bull; Central Pennsylvania</span>
+                <h1 class="hero-title fade-up">Restore Your Property's<br><span class="highlight-text">Original Character</span></h1>
+                <p class="hero-subtitle fade-up delay-1">Professional pressure washing and safe soft washing services that bring high-end ranch homes, historic farmhouses, and commercial spaces back to life.</p>
+                
+                <div class="hero-buttons fade-up delay-2">
+                    <a href="#contact" class="btn btn-accent btn-lg ripple">Get Instant Quote</a>
+                    <a href="#gallery" class="btn btn-outline btn-lg">View Our Work</a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-badges fade-up delay-3">
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" fill="currentColor"/>
+                        </svg>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="currentColor"/>
+                        </svg>
+                        <span>Family Owned</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg class="badge-icon" viewBox="0 0 24 24">
+                            <path d="M12,2C11.95,2 11.9,2 11.85,2.03L5.85,3.53C5.35,3.66 5,4.11 5,4.63V11C5,15.82 8.05,20.25 12,21.5C15.95,20.25 19,15.82 19,11V4.63C19,4.11 18.65,3.66 18.15,3.53L12.15,2.03C12.1,2 12.05,2 12,2M12,4L17,5.25V11C17,14.67 14.85,18.06 12,19.38C9.15,18.06 7,14.67 7,11V5.25L12,4M10.9,13.8L8.4,11.3L7,12.7L10.9,16.6L17,10.5L15.6,9.1L10.9,13.8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Satisfaction Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-bar-bg-overlay"></div>
+        <div class="trust-bar-container">
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M30,35 L70,35 M50,35 L50,65 M35,65 L65,65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">1,250+</h3>
+                    <p class="stat-desc">Properties Cleaned</p>
+                </div>
+            </div>
+            
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M30,30 L50,70 L70,30" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40,50 L60,50" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">5.0 Star</h3>
+                    <p class="stat-desc">Verified Reviews</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,40 H65 M50,40 V65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M40,65 H60" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-desc">Licensed & Insured</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,35 L65,65 M65,35 L35,65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">PA Local</h3>
+                    <p class="stat-desc">Locally Owned & Run</p>
+                </div>
+            </div>
+
+            <div class="trust-stat">
+                <div class="cattle-brand">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none" />
+                        <path d="M35,45 C35,35 45,30 50,30 C55,30 65,35 65,45 C65,58 50,70 50,70 C50,70 35,58 35,45 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+                        <circle cx="50" cy="45" r="5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number">Pro Rig</h3>
+                    <p class="stat-desc">Commercial Equipment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Expert Exterior Care</span>
+                <h2 class="section-title">Our Services</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">We combine specialized soft-wash chemistry and professional hot water pressure cleaning to protect and restore your property's value.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_house.jpg" alt="House Washing Icon">
+                    </div>
+                    <h3 class="card-title">House Washing</h3>
+                    <p class="card-desc">Safe, low-pressure soft washing that melts away algae, dirt, and mold from vinyl, brick, and stucco siding without structural damage.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Book Restoration &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_roof.jpg" alt="Roof Cleaning Icon">
+                    </div>
+                    <h3 class="card-title">Roof Cleaning</h3>
+                    <p class="card-desc">Non-pressure chemical treatments that eliminate black streaks (Gloeocapsa magma), moss, and lichen, extending your shingle or metal roof lifespan.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Request Service &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_concrete.jpg" alt="Concrete Cleaning Icon">
+                    </div>
+                    <h3 class="card-title">Concrete Cleaning</h3>
+                    <p class="card-desc">High-pressure, hot-water surface washing that extracts deep-set oil stains, rust, tire marks, and heavy grime from driveways, patios, and walkways.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Clean Concrete &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_gutter.jpg" alt="Gutter Cleaning Icon">
+                    </div>
+                    <h3 class="card-title">Gutter Cleaning</h3>
+                    <p class="card-desc">Inside debris removal followed by low-pressure exterior gutter brightening, removing unsightly black streaks and overflow debris.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Clear Gutters &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_deck.jpg" alt="Deck & Fence Cleaning Icon">
+                    </div>
+                    <h3 class="card-title">Deck & Fence Cleaning</h3>
+                    <p class="card-desc">Gentle restoration of cedar, redwood, and composite wood structures. Removes graying weathered fibers and opens pores for fresh staining.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Restore Wood &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card wood-plaque">
+                    <div class="plaque-burn"></div>
+                    <div class="card-icon">
+                        <img src="assets/service_commercial.jpg" alt="Commercial Washing Icon">
+                    </div>
+                    <h3 class="card-title">Commercial Washing</h3>
+                    <p class="card-desc">Scheduled hot-water pressure wash detailing for store entries, dumpster pads, retail parking structures, and exterior building envelopes.</p>
+                    <div class="card-action">
+                        <a href="#contact" class="service-link-btn">Consult Workspace &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Before & After Gallery -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="gallery-bg-texture"></div>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Visual Proof</span>
+                <h2 class="section-title">See The Difference</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">Slide back and forth to inspect our deep cleaning power on siding, cedar decks, commercial surfaces, and shingles.</p>
+            </div>
+
+            <!-- Before & After Tab Controls -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-target="slider-deck">Wood Deck</button>
+                <button class="tab-btn" data-target="slider-house">Vinyl Siding</button>
+                <button class="tab-btn" data-target="slider-roof">Shingle Roof</button>
+                <button class="tab-btn" data-target="slider-driveway">Driveway</button>
+            </div>
+
+            <!-- Before & After Sliders Wrapper -->
+            <div class="sliders-container">
+                <!-- Deck Slider -->
+                <div class="slider-wrapper active" id="slider-deck">
+                    <div class="before-after-slider">
+                        <div class="img-container before-img">
+                            <img src="assets/before_deck.jpg" alt="Weathered dirty deck before washing">
+                            <div class="slider-label label-before">Dirty Deck</div>
+                        </div>
+                        <div class="img-container after-img">
+                            <img src="assets/after_deck.jpg" alt="Clean cedar deck after restoration">
+                            <div class="slider-label label-after">Restored Deck</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+                                </svg>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- House Siding Slider -->
+                <div class="slider-wrapper" id="slider-house">
+                    <div class="before-after-slider">
+                        <div class="img-container before-img">
+                            <img src="assets/before_house.jpg" alt="Vinyl siding covered in mold before cleaning">
+                            <div class="slider-label label-before">Algae Stains</div>
+                        </div>
+                        <div class="img-container after-img">
+                            <img src="assets/after_house.jpg" alt="Bright vinyl siding after soft washing">
+                            <div class="slider-label label-after">Fresh Siding</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+                                </svg>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roof Slider (CSS Mocked Backgrounds/Placeholders for missing assets, will be overwritten by premium assets later) -->
+                <div class="slider-wrapper" id="slider-roof">
+                    <div class="before-after-slider">
+                        <div class="img-container before-img">
+                            <div class="fallback-placeholder before-placeholder">
+                                <h3>Black Shingle Mold</h3>
+                            </div>
+                            <div class="slider-label label-before">Black Streaks</div>
+                        </div>
+                        <div class="img-container after-img">
+                            <div class="fallback-placeholder after-placeholder">
+                                <h3>Restored Slate Shingles</h3>
+                            </div>
+                            <div class="slider-label label-after">Clean Roof</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+                                </svg>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Driveway Slider -->
+                <div class="slider-wrapper" id="slider-driveway">
+                    <div class="before-after-slider">
+                        <div class="img-container before-img">
+                            <div class="fallback-placeholder before-driveway-placeholder">
+                                <h3>Deep Oil & Rust Stains</h3>
+                            </div>
+                            <div class="slider-label label-before">Stained Concrete</div>
+                        </div>
+                        <div class="img-container after-img">
+                            <div class="fallback-placeholder after-driveway-placeholder">
+                                <h3>Bright Power-washed Concrete</h3>
+                            </div>
+                            <div class="slider-label label-after">Bright Walkway</div>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-button">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+                                </svg>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Why Choose Us -->
+    <section id="why-choose-us" class="why-choose-us section-padding">
+        <div class="container">
+            <div class="why-grid">
+                <!-- Left: Cinematic Portrait / Crew Action Image -->
+                <div class="why-image-wrapper">
+                    <div class="why-image-border"></div>
+                    <img src="assets/founder.jpg" alt="Saddleback Crew Member working on cleaning" class="why-image">
+                    <div class="why-badge">
+                        <span class="badge-num">10+</span>
+                        <span class="badge-text">Years of Quality</span>
+                    </div>
+                </div>
+
+                <!-- Right: Benefits column -->
+                <div class="why-content">
+                    <span class="sub-title">Built On Trust</span>
+                    <h2 class="section-title text-left">Built On Hard Work &amp; Honest Service</h2>
+                    <p class="why-lead">We operate with the integrity of an old-school craftsman and the modern equipment of an industry leader.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Reliable Scheduling</h4>
+                                <p>We respect your time. We show up when promised and text you when our clean rig is en route.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Safe Soft Washing</h4>
+                                <p>High-pressure ruins roofs and paint. Our eco-friendly low-pressure system protects vinyl and slate shingles completely.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2L2 22h20L12 2zm0 3.99L19.53 19H4.47L12 5.99zM13 16h-2v2h2v-2zm0-6h-2v4h2v-4z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Professional Results</h4>
+                                <p>Our custom rigs blast heat up to 200&deg;F, melting grime that simple cold hardware store washers leave behind.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card framed-card">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Satisfaction Guarantee</h4>
+                                <p>If you see a missed streak, point it out. We stand behind our word and will clean it again immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Reviews Section -->
+    <section class="reviews-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Word of Mouth</span>
+                <h2 class="section-title">What Our Customers Are Saying</h2>
+                <div class="title-divider"></div>
+                
+                <!-- Average Rating Display -->
+                <div class="average-rating-box">
+                    <div class="rating-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <span class="rating-number">4.9 / 5.0 Rating</span>
+                    <span class="rating-count">Based on 140+ Local Audits</span>
+                </div>
+            </div>
+
+            <!-- Postcard Carousel -->
+            <div class="carousel-outer">
+                <button class="carousel-control prev" aria-label="Previous review">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="carousel-window">
+                    <div class="carousel-track">
+                        <!-- Review Postcard 1 -->
+                        <div class="review-postcard">
+                            <div class="postcard-front">
+                                <div class="postcard-stamp">
+                                    <div class="stamp-serrated"></div>
+                                    <span class="stamp-price">5&cent;</span>
+                                    <span class="stamp-text">EST. 2014</span>
+                                </div>
+                                <div class="postcard-content">
+                                    <div class="postcard-left-side">
+                                        <div class="postcard-rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                        <p class="postcard-text">"Saddleback washed our entire farmhouse and weathered pine deck. The results are outstanding. All the black mold and grime on the siding melted away, and the wood deck looks brand new. Highly recommend!"</p>
+                                    </div>
+                                    <div class="postcard-divider-line"></div>
+                                    <div class="postcard-right-side">
+                                        <div class="postcard-recipient">
+                                            <p class="postcard-label">TO:</p>
+                                            <p class="postcard-name">Sheryl &amp; Dan K.</p>
+                                            <p class="postcard-location">Mechanicsburg, PA</p>
+                                        </div>
+                                        <div class="postcard-signature">
+                                            <span>Sheryl K.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Postcard 2 -->
+                        <div class="review-postcard">
+                            <div class="postcard-front">
+                                <div class="postcard-stamp">
+                                    <div class="stamp-serrated"></div>
+                                    <span class="stamp-price">5&cent;</span>
+                                    <span class="stamp-text">EST. 2014</span>
+                                </div>
+                                <div class="postcard-content">
+                                    <div class="postcard-left-side">
+                                        <div class="postcard-rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                        <p class="postcard-text">"Incredible service from start to finish. They texted me when they were 15 minutes away, walked me through the process, and used safe soft washing on my roof shingles. No more black streaks! Top tier."</p>
+                                    </div>
+                                    <div class="postcard-divider-line"></div>
+                                    <div class="postcard-right-side">
+                                        <div class="postcard-recipient">
+                                            <p class="postcard-label">TO:</p>
+                                            <p class="postcard-name">James Sterling</p>
+                                            <p class="postcard-location">Camp Hill, PA</p>
+                                        </div>
+                                        <div class="postcard-signature">
+                                            <span>J. Sterling</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Postcard 3 -->
+                        <div class="review-postcard">
+                            <div class="postcard-front">
+                                <div class="postcard-stamp">
+                                    <div class="stamp-serrated"></div>
+                                    <span class="stamp-price">5&cent;</span>
+                                    <span class="stamp-text">EST. 2014</span>
+                                </div>
+                                <div class="postcard-content">
+                                    <div class="postcard-left-side">
+                                        <div class="postcard-rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                        <p class="postcard-text">"Our commercial storefront looks pristine. They washed the brick facade, dumpster pads, and front walk. They cleaned it overnight so it didn't disrupt our custom business. Truly exceptional company."</p>
+                                    </div>
+                                    <div class="postcard-divider-line"></div>
+                                    <div class="postcard-right-side">
+                                        <div class="postcard-recipient">
+                                            <p class="postcard-label">TO:</p>
+                                            <p class="postcard-name">Caleb Miller</p>
+                                            <p class="postcard-location">Harrisburg, PA</p>
+                                        </div>
+                                        <div class="postcard-signature">
+                                            <span>Caleb Miller</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control next" aria-label="Next review">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Process Section (Trail Map Inspired) -->
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Simple Steps</span>
+                <h2 class="section-title text-light">How It Works</h2>
+                <div class="title-divider"></div>
+                <p class="section-description text-light">Follow the restoration trail. Our simple four-step process ensures a seamless service from request to checkout.</p>
+            </div>
+
+            <!-- Trail Map Visual -->
+            <div class="trail-container">
+                <!-- SVG Animated Path -->
+                <svg class="trail-svg" viewBox="0 0 800 500" preserveAspectRatio="none">
+                    <!-- Background Grey Track -->
+                    <path class="trail-path-bg" d="M 100,100 C 300,100 200,250 400,250 C 600,250 500,400 700,400" fill="none" stroke="#2F2117" stroke-width="4" stroke-dasharray="10 10"/>
+                    <!-- Animated Active Path -->
+                    <path id="active-trail-path" class="trail-path-active" d="M 100,100 C 300,100 200,250 400,250 C 600,250 500,400 700,400" fill="none" stroke="#B66A2C" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Step Nodes overlaying the map coordinate spaces -->
+                <div class="trail-step step-1" style="left: 12%; top: 20%;">
+                    <div class="step-marker">
+                        <span class="step-num">1</span>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Request A Quote</h4>
+                        <p class="step-text">Fill out our quick online form and upload a few photos of your home for a rapid estimate.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-2" style="left: 38%; top: 50%;">
+                    <div class="step-marker">
+                        <span class="step-num">2</span>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Schedule Service</h4>
+                        <p class="step-text">Pick a convenient day. We lock in your timeslot and send a custom confirmation text.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-3" style="left: 58%; top: 32%;">
+                    <div class="step-marker">
+                        <span class="step-num">3</span>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">We Clean</h4>
+                        <p class="step-text">Our custom rigs roll out. We perform hot-water wash or soft wash treatments with elite precision.</p>
+                    </div>
+                </div>
+
+                <div class="trail-step step-4" style="left: 88%; top: 80%;">
+                    <div class="step-marker">
+                        <span class="step-num">4</span>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="step-plaque">
+                        <h4 class="step-title">Enjoy Results</h4>
+                        <p class="step-text">Inspect our craft. Once completely happy, settle up securely via email invoice or mobile pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Video Section -->
+    <section class="video-section section-padding">
+        <div class="video-section-overlay"></div>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Precision Exterior Care</span>
+                <h2 class="section-title text-light">Watch Us In Action</h2>
+                <div class="title-divider"></div>
+                <p class="section-description text-light">See how our professional soft-washing process safely strips away black algae streaks and lichen without high pressure.</p>
+            </div>
+
+            <!-- Custom Western-Themed Video Frame -->
+            <div class="video-frame-container">
+                <div class="video-frame-top-decor"></div>
+                <div class="video-frame-inner">
+                    <!-- Standard video node styled beautifully. Since there is no actual video file, we mock an interactive playback controls UI with canvas and custom CSS. -->
+                    <div class="video-mock-overlay">
+                        <div class="video-mock-bg"></div>
+                        <div class="video-play-btn-wrapper">
+                            <button id="video-play-button" class="video-play-btn" aria-label="Play video">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-meta">
+                            <span class="video-duration">1:45</span>
+                            <span class="video-title">Saddleback Wash Co. Process Walkthrough</span>
+                        </div>
+                    </div>
+                    <video id="cinematic-video" class="cinematic-player" preload="metadata" loop muted playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-power-washing-a-brick-wall-42173-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-frame-bottom-decor"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Service Area Map -->
+    <section id="map" class="map-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Our Territory</span>
+                <h2 class="section-title">Proudly Serving Central Pennsylvania</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">We serve estates, residential properties, and commercial buildings within a 40-mile radius of Harrisburg.</p>
+            </div>
+
+            <div class="map-layout">
+                <!-- Map Left Side: Interactive SVG Map (National Park style) -->
+                <div class="map-visual-container">
+                    <div class="map-inner-border"></div>
+                    <!-- Custom SVG representing Central PA terrain/boundaries in stylized National Park Map aesthetic -->
+                    <svg class="custom-pa-map" viewBox="0 0 600 450">
+                        <!-- Topographical/Ranch contour lines -->
+                        <path d="M 50,50 Q 150,80 300,50 T 550,60" fill="none" stroke="#E4D7C8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M 50,150 Q 200,100 350,180 T 550,120" fill="none" stroke="#E4D7C8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M 50,250 Q 220,300 400,220 T 550,280" fill="none" stroke="#E4D7C8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="M 50,350 Q 180,330 300,380 T 550,360" fill="none" stroke="#E4D7C8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        
+                        <!-- River Representation (Susquehanna River) -->
+                        <path d="M 220,0 Q 240,150 210,250 T 260,450" fill="none" stroke="#D4B08C" stroke-width="8" opacity="0.3"/>
+                        <text x="210" y="80" transform="rotate(78, 210, 80)" font-family="'Playfair Display', serif" font-size="10" fill="#2F2117" opacity="0.4" letter-spacing="4">SUSQUEHANNA RIVER</text>
+
+                        <!-- Serving Boundary Outline -->
+                        <circle cx="300" cy="225" r="180" fill="none" stroke="#B66A2C" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+                        <text x="440" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#B66A2C" font-weight="600" letter-spacing="1">40-MILE RESTORATION BORDER</text>
+
+                        <!-- Cities Markers (Pins) -->
+                        <!-- Harrisburg (Center/River crossing) -->
+                        <g class="map-pin active" data-city="harrisburg" transform="translate(230, 210)">
+                            <circle cx="0" cy="0" r="16" fill="rgba(182, 106, 44, 0.15)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="6" fill="#B66A2C"/>
+                            <text x="12" y="4" font-family="'Young Serif', serif" font-size="12" fill="#2F2117">Harrisburg</text>
+                        </g>
+
+                        <!-- Mechanicsburg -->
+                        <g class="map-pin" data-city="mechanicsburg" transform="translate(160, 240)">
+                            <circle cx="0" cy="0" r="12" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="-95" y="4" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Mechanicsburg</text>
+                        </g>
+
+                        <!-- Camp Hill -->
+                        <g class="map-pin" data-city="camphill" transform="translate(200, 215)">
+                            <circle cx="0" cy="0" r="10" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="-72" y="-6" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Camp Hill</text>
+                        </g>
+
+                        <!-- Carlisle -->
+                        <g class="map-pin" data-city="carlisle" transform="translate(90, 260)">
+                            <circle cx="0" cy="0" r="12" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="-12" y="-12" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Carlisle</text>
+                        </g>
+
+                        <!-- Hershey -->
+                        <g class="map-pin" data-city="hershey" transform="translate(340, 190)">
+                            <circle cx="0" cy="0" r="12" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="12" y="4" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Hershey</text>
+                        </g>
+
+                        <!-- New Cumberland -->
+                        <g class="map-pin" data-city="newcumberland" transform="translate(225, 255)">
+                            <circle cx="0" cy="0" r="10" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="12" y="12" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">New Cumberland</text>
+                        </g>
+
+                        <!-- Enola -->
+                        <g class="map-pin" data-city="enola" transform="translate(205, 175)">
+                            <circle cx="0" cy="0" r="10" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="-48" y="-8" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Enola</text>
+                        </g>
+
+                        <!-- Lemoyne -->
+                        <g class="map-pin" data-city="lemoyne" transform="translate(220, 222)">
+                            <circle cx="0" cy="0" r="10" fill="rgba(182, 106, 44, 0.1)"/>
+                            <circle class="pin-dot" cx="0" cy="0" r="5" fill="#B66A2C"/>
+                            <text x="12" y="-4" font-family="'Young Serif', serif" font-size="11" fill="#2F2117">Lemoyne</text>
+                        </g>
+                    </svg>
+
+                    <!-- Overlay Map Info Panel -->
+                    <div id="map-info-popup" class="map-info-box">
+                        <h4 id="popup-title">Harrisburg Office</h4>
+                        <p id="popup-desc">Central hub, dispatching clean trucks daily for house washing, roofs, and concrete restoration.</p>
+                        <span class="popup-stat">Avg. Dispatch: <strong id="popup-dispatch">Same Week</strong></span>
+                    </div>
+                </div>
+
+                <!-- Map Right Side: Directory & CTA -->
+                <div class="map-directory">
+                    <span class="sub-title">Where We Work</span>
+                    <h3 class="directory-title">Central PA Coverage Directory</h3>
+                    <p class="directory-desc">We dispatch out of Harrisburg, maintaining local routes across Cumberland and Dauphin counties. Select a city below to view dispatch timelines.</p>
+                    
+                    <div class="cities-list-group">
+                        <button class="city-selector-btn active" data-city="harrisburg">
+                            <span>Harrisburg</span>
+                            <span class="badge badge-primary">Daily Dispatch</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="mechanicsburg">
+                            <span>Mechanicsburg</span>
+                            <span class="badge badge-secondary">Mon / Wed / Fri</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="camphill">
+                            <span>Camp Hill</span>
+                            <span class="badge badge-secondary">Tue / Thu / Sat</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="carlisle">
+                            <span>Carlisle</span>
+                            <span class="badge badge-accent">Wed / Sat</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="hershey">
+                            <span>Hershey</span>
+                            <span class="badge badge-secondary">Tue / Thu</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="newcumberland">
+                            <span>New Cumberland</span>
+                            <span class="badge badge-primary">Daily Dispatch</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="enola">
+                            <span>Enola</span>
+                            <span class="badge badge-secondary">Mon / Thu</span>
+                        </button>
+                        <button class="city-selector-btn" data-city="lemoyne">
+                            <span>Lemoyne</span>
+                            <span class="badge badge-primary">Daily Dispatch</span>
+                        </button>
+                    </div>
+
+                    <div class="map-cta">
+                        <p class="map-cta-text">Don't see your town listed? We cover most outlying ranch estates and rural areas in Central Pennsylvania.</p>
+                        <a href="#contact" class="btn btn-accent btn-sm">Check Coverage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">Here is what homeowners and estate managers ask us most about our soft-wash and pressure cleaning process.</p>
+            </div>
+
+            <!-- Accordion resembling handcrafted wood panels -->
+            <div class="faq-accordion-group">
+                <!-- Item 1 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">How much does pressure washing cost?</h4>
+                        <div class="accordion-icon-wrapper">
+                            <span class="accordion-icon"></span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Pricing is based on square footage, level of organic growth (algae/moss), and surface type. Average house wash services run between $290 and $550. Premium concrete driveways usually run $200 to $450. We offer a transparent, line-item instant quote detailing everything before locking in schedule dates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">What is soft washing?</h4>
+                        <div class="accordion-icon-wrapper">
+                            <span class="accordion-icon"></span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Soft washing is a low-pressure cleaning method (under 300 PSI, similar to a garden hose) that relies on professional-grade biodegradable cleaning agents to safely sanitize roofs, wood decks, and delicate vinyl siding. It kills organic spores at their roots instead of just blasting the top layer with high pressure, which can erode materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">Is your process safe for pets and landscaping?</h4>
+                        <div class="accordion-icon-wrapper">
+                            <span class="accordion-icon"></span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Absolutely. We practice thorough pre-wetting and post-rinsing of all grass, shrubs, and gardens around your home, diluted to safe levels. We use plant wash shields when necessary, and all sanitizers break down into simple table salts shortly after drying. We only request that pets remain inside while the crews work.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">How soon can I get scheduled?</h4>
+                        <div class="accordion-icon-wrapper">
+                            <span class="accordion-icon"></span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>During spring and summer peak cycles, our schedules fill up 1 to 2 weeks out. We maintain backup slots for urgent sales transactions or emergency cleanings. Request a quote today to view the current live calendar and secure a time that works for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item wood-plaque">
+                    <div class="accordion-header">
+                        <h4 class="accordion-title">Are you fully licensed and insured?</h4>
+                        <div class="accordion-icon-wrapper">
+                            <span class="accordion-icon"></span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Yes. Saddleback Wash Co. carries $2,000,000 in general commercial liability coverage and full workers' compensation coverage for our team. We protect you and your property. Verification certificates are emailed automatically with every work confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: About Section (Premium Ranch Story layout) -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Ranch Brand Copy / Story -->
+                <div class="about-content">
+                    <span class="sub-title">Our Heritage</span>
+                    <h2 class="section-title text-left">A Local Company You Can Count On</h2>
+                    <p class="about-lead">Saddleback Wash Co. was founded on a simple belief: clean properties deserve the same care and precision as handcrafted leather goods.</p>
+                    
+                    <div class="story-text">
+                        <p>We grew up in Central Pennsylvania, surrounded by the heritage of family-run farms and historic stonework. In 2014, we bought our first pressure washer with one promise—to treat every property as if it were our family home. We didn't want to build a generic exterior washing company. We designed Saddleback to be a benchmark of honest craft.</p>
+                        <p>We train our crews to understand wood grain hydration, slate shingle expansion, and safe soft-wash chemical blends. Today, we remain family-owned and locally run. We stand behind every job with a firm handshake, a guaranteed quote, and visual proof of our quality.</p>
+                    </div>
+
+                    <div class="founder-signature-box">
+                        <p class="signature-greeting">Sincerely,</p>
+                        <span class="signature-font">Nevin Shields</span>
+                        <div class="founder-title">
+                            <strong>Nevin Shields</strong>
+                            <span>Founder &amp; Lead Crew Manager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: About Portrait -->
+                <div class="about-visual">
+                    <div class="visual-border-frame"></div>
+                    <div class="visual-image-container">
+                        <img src="assets/founder.jpg" alt="Saddleback Founder Nevin Shields" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 12: CTA Banner (Sunset Gradient) -->
+    <section class="cta-banner">
+        <div class="cta-banner-overlay"></div>
+        <div class="container text-center">
+            <h2 class="cta-headline">Ready To Bring Your Property<br>Back To Life?</h2>
+            <p class="cta-subheadline">Get a free, detailed, transparent line-item estimate in under 5 minutes.</p>
+            <a href="#contact" class="btn btn-accent btn-lg ripple">Get Instant Quote</a>
+        </div>
+    </section>
+
+    <!-- Section 13: Contact Form (Lead capture) -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Column: Business info -->
+                <div class="contact-info-block">
+                    <span class="sub-title">Contact Us</span>
+                    <h2 class="section-title text-left text-light">Get Your Free Estimate</h2>
+                    <p class="contact-lead-text">Fill out our quote form, and our estimating team will send a custom line-item quote via text and email within 3 hours.</p>
+                    
+                    <div class="info-details-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span>Call or Text:</span>
+                                <a href="tel:7175550190">(717) 555-0190</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span>Email Enquiries:</span>
+                                <a href="mailto:quote@saddlebackwash.com">quote@saddlebackwash.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span>Operating Hours:</span>
+                                <p>Monday &ndash; Saturday: 7:00 AM &ndash; 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-badges">
+                        <div class="trust-pill">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                            </svg>
+                            <span>100% Satisfaction Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Premium Quote Form -->
+                <div class="contact-form-block wood-plaque">
+                    <form id="quote-request-form" class="quote-form" method="POST" enctype="multipart/form-data">
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="form-name">Your Full Name <span class="required">*</span></label>
+                                <input type="text" id="form-name" name="name" placeholder="John Miller" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="(717) 555-0100" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="form-email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-address">Property Address <span class="required">*</span></label>
+                                <input type="text" id="form-address" name="address" placeholder="123 Country Club Rd, Camp Hill, PA" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service">Required Service <span class="required">*</span></label>
+                            <select id="form-service" name="service" required>
+                                <option value="" disabled selected>Select exterior service</option>
+                                <option value="house">House Soft Wash</option>
+                                <option value="roof">Shingle/Slate Roof Restoration</option>
+                                <option value="concrete">Concrete / Patio Restoration</option>
+                                <option value="deck">Deck &amp; Fence Care</option>
+                                <option value="gutter">Gutter Clearing &amp; Brightening</option>
+                                <option value="commercial">Commercial Pressure Washing</option>
+                                <option value="bundle">Full Property Detailing (Bundle)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Describe Your Project / Special Needs</label>
+                            <textarea id="form-message" name="message" rows="4" placeholder="E.g., clean algae stains on the north side, concrete walkways, and bright red cedar deck washing."></textarea>
+                        </div>
+
+                        <!-- Drag and Drop Photo Uploader -->
+                        <div class="form-group">
+                            <label>Optional: Upload Property Photos (Helps speed up estimates)</label>
+                            <div id="photo-dropzone" class="dropzone-area">
+                                <input type="file" id="form-photos" name="photos" accept="image/*" multiple class="dropzone-input">
+                                <div class="dropzone-message">
+                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                    <p class="dropzone-main-text">Drag &amp; drop photos here or <span>browse files</span></p>
+                                    <p class="dropzone-sub-text">Support formats: JPG, PNG. Max size: 10MB.</p>
+                                </div>
+                                <div id="dropzone-preview" class="dropzone-preview-grid"></div>
+                            </div>
+                        </div>
+
+                        <!-- Form Submission button -->
+                        <button type="submit" id="submit-quote-btn" class="btn btn-accent btn-full ripple">
+                            <span>Get My Free Estimate</span>
+                        </button>
+                        
+                        <!-- Successful Sage Green prompt box -->
+                        <div id="form-success-message" class="form-status success-box hidden">
+                            <div class="status-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="status-content">
+                                <h4>Estimate Request Submitted!</h4>
+                                <p>Thank you. We've received your request and property details. Our local technician will review the photos and text you a line-item estimate shortly.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 14: Footer -->
+    <footer class="main-footer">
+        <div class="footer-bg-overlay"></div>
+        <div class="container">
+            <div class="footer-top-row">
+                <!-- Col 1: Brand Info -->
+                <div class="footer-brand-col">
+                    <a href="#" class="logo-group">
+                        <span class="brand-brand">S</span>
+                        <div class="logo-text">
+                            <span class="logo-title text-light">SADDLEBACK</span>
+                            <span class="logo-tag text-light">WASH CO.</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">Premium exterior restoration and pressure cleaning services. Rebuilding properties' original luster with modern integrity.</p>
+                    
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.526 3.545 12 3.545 12 3.545s-7.526 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.025 0 12 0 12s0 3.975.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.862.508 9.388.508 9.388.508s7.526 0 9.388-.508a3.002 3.002 0 0 0 2.11-2.11C24 15.975 24 12 24 12s0-3.975-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services Quick Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Services Offered</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#services">House Siding Soft Washing</a></li>
+                        <li><a href="#services">Shingle &amp; Slate Roof Clean</a></li>
+                        <li><a href="#services">Driveway &amp; Patio Washing</a></li>
+                        <li><a href="#services">Gutter Flush &amp; Brighten</a></li>
+                        <li><a href="#services">Deck &amp; Wood Fencing Care</a></li>
+                        <li><a href="#services">Commercial Property Wash</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Areas Served Directory -->
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Territories Covered</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#map">Harrisburg, PA</a></li>
+                        <li><a href="#map">Mechanicsburg, PA</a></li>
+                        <li><a href="#map">Camp Hill, PA</a></li>
+                        <li><a href="#map">Carlisle, PA</a></li>
+                        <li><a href="#map">Hershey, PA</a></li>
+                        <li><a href="#map">New Cumberland, PA</a></li>
+                        <li><a href="#map">Enola &amp; Lemoyne, PA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact details summary -->
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Contact Saddleback</h4>
+                    <ul class="footer-contact-details">
+                        <li>
+                            <span class="label">Dispatch Center:</span>
+                            <a href="tel:7175550190" class="tel-link">(717) 555-0190</a>
+                        </li>
+                        <li>
+                            <span class="label">Admin Email:</span>
+                            <a href="mailto:office@saddlebackwash.com" class="email-link">office@saddlebackwash.com</a>
+                        </li>
+                        <li>
+                            <span class="label">Corporate HQ:</span>
+                            <address>400 Ironwood Dr, Harrisburg, PA 17110</address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer divider lines with copper stars -->
+            <div class="footer-divider">
+                <div class="divider-line"></div>
+                <div class="divider-star">&#9733;</div>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <p class="copyright-text">&copy; 2026 Saddleback Wash Co. All rights reserved. Built with pride in Central Pennsylvania.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Insurance Verification</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main interactivity script -->
+    <script src="script.js"></script>
+</body>
+</html>
