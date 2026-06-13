@@ -46,6 +46,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -53,8 +55,11 @@ body {
     color: var(--color-text-brown);
     font-family: var(--font-body);
     line-height: 1.6;
+    max-width: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1043,6 +1048,7 @@ button {
 }
 
 .sliders-container {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     aspect-ratio: 16 / 10;
@@ -1380,6 +1386,7 @@ button {
 
 /* Carousel Outer Layer */
 .carousel-outer {
+    width: 100%;
     max-width: 900px;
     margin: 60px auto 0 auto;
     position: relative;
@@ -1588,6 +1595,7 @@ button {
 }
 
 .trail-container {
+    width: 100%;
     max-width: 900px;
     height: 500px;
     margin: 60px auto 0 auto;
@@ -1713,6 +1721,7 @@ button {
 }
 
 .video-frame-container {
+    width: 100%;
     max-width: 900px;
     margin: 60px auto 0 auto;
     position: relative;
